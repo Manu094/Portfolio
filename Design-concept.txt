@@ -1,0 +1,106 @@
+Who's my audience ?
+Headings and images, structure. card? size? think about what my user wants
+
+make a repeatable design
+making sections
+
+
+Hero section :
+either 1 or 2-column
+Bold powerful heading that answers 'what problem of the user am I solving ?', boasting about a product that no one else has
+subheading expanding on the heading in 2-3 sentences
+crisp bold images
+call to action
+
+next sections :
+more information, but no fluff. more transparency.
+explain features, pricing, competitive edge.
+keep asking 'what is the purpose of this section ?'
+
+
+colors :
+black, white (and small variations) and two accent colors
+
+fonts :
+one font per website
+
+use CSS variables to make changes apply to every element and dark mode easier
+
+______________________________________________________________________
+|                                                                     | 
+|                                                                     |
+|                                                                     |
+|                              ________________________________       |                                
+|                             |                                |      | 
+|                             |                                |      | 
+|        Y o u   d e s e r v e   e x p o s u r e   t o o       |      | 
+|        Y o u   d e s e r v e   e x p o s u r e   t o o       |      |
+|                             |                                |      | 
+|      Growing your community |                                |      |
+|          Growing your reach |          call to action        |      |
+|         Growing your impact |                                |      |
+|                             |________________________________|      |
+|                                                                     |
+|                                                                     |
+|                                                                     |
+|                                                                     |
+|_____________________________________________________________________|
+|                                                                     |
+|                                                                     |
+|        Making a bold design                                         |
+|                                                                     |
+|             Your most powerful asset is                             |
+|             your word. Let's make it                                |
+|             stand out.                                              |
+|                                                                     |
+|         -> Striking visuals but comfortable visuals                 |
+|                                                                     |
+|                                                                     |
+|_____________________________________________________________________|
+|                                                                     |
+|        Tailoring your Appearance                                    |
+|                                                                     |
+|             I believe working in close                              |
+|             collaboration with you will                             |
+|             help your vision come to life.                          |
+|                                                                     |
+|         -> Plan a free meeting to discuss about your project        |
+|                                                                     |
+|                                                                     |
+|_____________________________________________________________________|
+|                                                                     |
+|        Going the extra mile                                         |
+|                                                                     |
+|             Regular follow-up and maintenance,                      |
+|             becauses your reputation matters                        |
+|             more than an impression.                                |
+|                                                                     |
+|         -> Lifetime support                                         |
+|                                                                     |
+|                                                                     |
+|_____________________________________________________________________|
+|                                                                     |
+|        Pricing                                                      |
+|                                                                     |
+|             Website developpment : 40 CHF/h                         |
+|             Social media (creation and managment) : 50 CHF/h        |
+|             1 hour meeting offered for each project ordered         |
+|             More details                                            |
+|                                                                     |
+|                                                                     |
+|                                                                     |
+|_____________________________________________________________________|
+|                                                                     |
+|        Waiting for your call !                                      |
+|                                                                     |
+|             emmanuel.prudente@example.com                           |
+|             +41 12 345 67 89                                        |
+|             [social media links]                                    |
+|                                                                     |
+|                                                                     |
+|                                                                     |
+|_____________________________________________________________________|
+|                                                                     |
+|         copyright                                  adress           |
+|                                                                     |
+|_____________________________________________________________________|
