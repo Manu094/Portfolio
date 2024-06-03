@@ -2,20 +2,23 @@
     --main-black: #02040c;
     --main-white: #dfd9e4;
     --main-teal: #65b4d1;
-    --main-red: #f79172;
+    --main-red: #d20f20;
+    --dark-red: #a00a0a;
     --body-background-color: var(--main-white);
 
     --image-brightness: 100%;
     --image-contrast: 1;
 
     font-family: 'Fira Sans', sans-serif;
+    --text-color: var(--main-black);
 }
 
 @media (prefers-color-scheme: dark) {
     :root {
         --body-background-color: var(--main-black);
-        --image-brightness: 70%;
-        --image-contrast: 1.15;
+        --image-brightness: 80%;
+        --image-contrast: 1.1;
+        --text-color: var(--main-white);
     }
 }
 
@@ -29,6 +32,12 @@ header {
     align-items: center;
 }
 
+hr {
+    border: none;
+}
+
+/* element that contains the bg image */
+
 #header-background {
     background-image: url('../media/images/boats-mobile.webp');
     background-size: cover;
@@ -40,6 +49,8 @@ header {
     height: 100%;
     width: 100%
 }
+
+/* breakpoints to increase image size when viewport width increases */
 
 @media only screen and (min-width: 768px) {
     #header-background {
@@ -54,30 +65,58 @@ header {
 }
 
 #title {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
     position: absolute;
-    /* backdrop-filter: blur(4px) brightness(30%); */
+    background-image: linear-gradient(0deg, var(--body-background-color), rgba(0, 0, 0, 0) 20rem);
     width: 100%;
+    height: 100svh;
     top: 0svh;
 }
 
-h1 {
+/* gradient bar vertical when in landscape */
+
+@media only screen and (min-aspect-ratio: 1/1) {
+    #title {
+        background-image: linear-gradient(90deg, var(--body-background-color), rgba(0, 0, 0, 0) 30rem),
+        linear-gradient(0deg, var(--body-background-color), rgba(0, 0, 0, 0) 5rem);
+    }
+}
+
+#you {
+    background: linear-gradient(90deg, var(--dark-red), var(--main-red));
+    -webkit-background-clip: text;
+            background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@media (prefers-color-scheme: dark) {
+    #you {
+        background: linear-gradient(90deg, var(--main-red), var(--dark-red));
+        -webkit-background-clip: text;
+                background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+
+#header {
     font-size: 2.5rem;
-    color: var(--main-white);
-    margin: 1rem;
+    color: var(--text-color);
+    margin: 0 1rem;
     font-weight: 800;
-    text-align: right;
+    text-align: left;
 }
 
 #subheader-group {
     font-size: 1rem;
-    color: var(--main-white);
-    padding: 0.5rem;
-    margin: 0.5rem;
+    color: var(--text-color);
+    margin: 2rem 1rem;
 }
 
 .subheader {
     font-weight: 600;
-    text-align: right;
+    text-align: left;
 u
 }
 
