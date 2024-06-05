@@ -9,6 +9,11 @@
     --image-brightness: 100%;
     --image-contrast: 1;
 
+    --you-gradient-1: var(--dark-red);
+    --you-gradient-2: var(--main-red);
+
+    --argument-spotlight: rgba(45, 214, 236, 0.3);
+
     font-family: 'Fira Sans', sans-serif;
     --text-color: var(--main-black);
 }
@@ -16,8 +21,15 @@
 @media (prefers-color-scheme: dark) {
     :root {
         --body-background-color: var(--main-black);
+
         --image-brightness: 80%;
         --image-contrast: 1.1;
+
+        --you-gradient-1: var(--main-red);
+        --you-gradient-2: var(--dark-red);
+
+        --argument-spotlight: rgba(45, 214, 236, 0.085);
+
         --text-color: var(--main-white);
     }
 }
@@ -71,7 +83,7 @@ hr {
     position: absolute;
     background-image: linear-gradient(0deg, var(--body-background-color), rgba(0, 0, 0, 0) 20rem);
     width: 100%;
-    height: 100svh;
+    height: 100%;
     top: 0svh;
 }
 
@@ -80,24 +92,15 @@ hr {
 @media only screen and (min-aspect-ratio: 1/1) {
     #title {
         background-image: linear-gradient(90deg, var(--body-background-color), rgba(0, 0, 0, 0) 30rem),
-        linear-gradient(0deg, var(--body-background-color), rgba(0, 0, 0, 0) 5rem);
+            linear-gradient(0deg, var(--body-background-color), rgba(0, 0, 0, 0) 5rem);
     }
 }
 
 #you {
-    background: linear-gradient(90deg, var(--dark-red), var(--main-red));
+    background: linear-gradient(90deg, var(--you-gradient-1), var(--you-gradient-2));
     -webkit-background-clip: text;
-            background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
-}
-
-@media (prefers-color-scheme: dark) {
-    #you {
-        background: linear-gradient(90deg, var(--main-red), var(--dark-red));
-        -webkit-background-clip: text;
-                background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
 }
 
 #header {
@@ -117,9 +120,21 @@ hr {
 .subheader {
     font-weight: 600;
     text-align: left;
-u
+}
+
+@keyframes fade-in {
+    from {
+        transform: translateX(-500px)
+    }
+    to {
+        transform: translateX(0)
+    }
 }
 
 .argument {
     height: 70svh;
+    background-image: radial-gradient(circle at 0%, var(--argument-spotlight), rgba(0, 0, 0, 0) 35svh);
+    animation: fade-in linear both;
+    animation-timeline: view();
+    animation-range: 30svh 70svh;
 }
